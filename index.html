@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/_reset.css" />
+  <link rel="icon" type="image/jpg"
+    href="https://image.mail.kerastase.com.br/lib/fe8c12727d62007b76/m/1/32cd41eb-85ed-49a2-9a1a-8813508ed377.jpg">
+  <title>L'oréal - Foto Proteção e Saúde da Pele</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="phone-panel">
+      <img src="/asserts/img3.jpg" alt="Banner da L'Oréal" class="banner-image">
+    </div>
+
+    <!-- Imagem à esquerda -->
+    <div class="left-panel">
+      <img src="/asserts/img1.jpg" alt="Banner da L'Oréal" class="banner-image">
+    </div>
+
+    <!-- Formulário à direita -->
+    <div class="right-panel">
+      <h2>Seja bem-vindo(a) ao <br /> <span style="font-weight: normal;"> Pharma Revolution da L'Oréal Beleza Dermatológica!</span>
+      </h2>
+      <form id="registration-form">
+
+        <!-- Nome e Sobrenome lado a lado -->
+        <div class="form-row">
+          <div class="form-group half-width">
+            <label for="firstName">Nome*</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group half-width">
+            <label for="lastName">Sobrenome*</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+
+        <!-- CPF e E-mail lado a lado -->
+        <div class="form-row">
+          <div class="form-group half-width">
+            <label for="cpf">CPF*</label>
+            <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+          </div>
+          <div class="form-group half-width">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <!-- Nascimento e DDD + Celular lado a lado -->
+        <div class="form-row">
+          <div class="form-group half-width">
+            <label for="birthdate">Nascimento*</label>
+            <input type="text" id="birthdate" name="birthdate" required placeholder="dd/mm/aaaa">
+          </div>
+          <div class="form-group half-width">
+            <label for="phone">DDD + Celular*</label>
+            <input type="text" id="phone" name="phone" required>
+          </div>
+        </div>
+
+        <!-- Ocupação -->
+        <div class="ocupacao">
+          <label class="occupationLabel">Sua ocupação:*</label>
+          <div class="ocupacaoText">
+            <label class="inputLabel"><input type="radio" name="occupation" value="farmaceutico"> Farmacêutico</label>
+            <label class="inputLabel"><input type="radio" name="occupation" value="dermoconsultor" checked> Dermoconsultor</label>
+            <label class="inputLabel"><input type="radio" name="occupation" value="outros"> Outros</label>
+          </div>
+        </div>
+
+        <!-- Rede e Qual colaborador? lado a lado -->
+        <div class="form-row">
+          <div class="form-group half-width">
+            <label for="network">Rede*</label>
+            <select id="network" name="network" required>
+              <option value="">Selecione a rede</option>
+              <option value="venancio">Venâncio</option>
+              <option value="pague_menos">Pague Menos</option>
+              <option value="panvel">Panvel</option>
+              <option value="raia">Raia</option>
+              <option value="drogasil">Drogasil</option>
+              <option value="pacheco">Pacheco</option>
+              <option value="drogaria_araujo">Drogaria Araújo</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Foi convidado por algum colaborador L'Oréal? -->
+        <div class="convidado">
+          <div class="radioContainer">
+            <label>Foi convidado por algum colaborador L'Oréal?</label>
+            <div class="colas">
+              <label><input type="radio" name="invite" value="sim" id="invite-sim"> Sim</label>
+              <label><input type="radio" name="invite" value="nao" id="invite-nao" checked> Não</label>
+            </div>
+          </div>
+
+          <div class="form-group half-width">
+            <label for="collaborator">Qual colaborador?*</label>
+            <select id="collaborator" name="collaborator" required disabled>
+              <option value="">Selecione o colaborador</option>
+              <option value="Adailton Da Silva">ADAILTON DA SILVA</option>
+              <option value="adriana De Jesus">ADRIANA DE JESUS</option>
+              <option value="adriana Souza">ADRIANA SOUZA</option>
+              <option value="aires Da Silva">AIRES DA SILVA</option>
+              <option value="almir Roberto">ALMIR ROBERTO</option>
+              <option value="ana Carolina">ANA CAROLINA</option>
+              <option value="ana Paula">ANA PAULA </option>
+              <option value="ana Paula">ANA PAULA </option>
+              <option value="andressa Alfredo">ANDRESSA ALFREDO</option>
+              <option value="antonia Nayra">ANTONIA NAYRA</option>
+              <option value="bianca Ferrer">BIANCA FERRER</option>
+              <option value="bianca Szpakowski">BIANCA SZPAKOWSKI</option>
+              <option value="bruno Philippe">BRUNO PHILIPPE</option>
+              <option value="camila Alves">CAMILA ALVES</option>
+              <option value="antonia Nayra">CAMILA DA SILVA</option>
+              <option value="camila Ferreira">CAMILA FERREIRA</option>
+              <option value="caroline Frois">CAROLINE FROIS</option>
+              <option value="claudineia De Almeida">CLAUDINEIA DE ALMEIDA</option>
+              <option value="daianeGarcia">DAIANE GARCIA</option>
+              <option value="dayaneNeves">DAYANE NEVES</option>
+              <option value="debora Aparecida">DEBORA APARECIDA</option>
+              <option value="deijanira Gomes">DEIJANIRA GOMES</option>
+              <option value="dennilane Barbosa">DENNILANE BARBOSA</option>
+              <option value="elaine Pereira">ELAINE PEREIRA</option>
+              <option value="elenice Moreira">ELENICE MOREIRA</option>
+              <option value="elis Regina">ELIS REGINA</option>
+              <option value="fabiana Da Silva">FABIANA DA SILVA</option>
+              <option value="fabiana Guimaraes">FABIANA GUIMARAES</option>
+              <option value="felipe Da Silva">FELIPE DA SILVA</option>
+              <option value="felipe De Souza">FELIPE DE SOUZA</option>
+              <option value="fernanda Lopes">FERNANDA LOPES</option>
+              <option value="fernanda Ribeiro">FERNANDA RIBEIRO</option>
+              <option value="francisca Aline">FRANCISCA ALINE</option>
+              <option value="georgede Oliveira">GEORGE DE OLIVEIRA</option>
+              <option value="gleice Kelly">GLEICE KELLY</option>
+              <option value="heloisa Melo">HELOISA MELO</option>
+              <option value="iara Silva">IARA SILVA</option>
+              <option value="ilda De Oliveira">ILDA DE OLIVEIRA</option>
+              <option value="ingrid De Souza">INGRID DE SOUSA</option>
+              <option value="isabella De Paula">ISABELLA DE PAULA</option>
+              <option value="jacqueline Coraca">JACQUELINE CORACA</option>
+              <option value="jairiane Barbosa">JAIRIANE BARBOSA</option>
+              <option value="jamylle Aline">JAMYLLE ALINE</option>
+              <option value="janny Clea">JANNY CLEA</option>
+              <option value="jefferson Soares">JEFFERSON SOARES</option>
+              <option value="jenifer Cristina">JENIFER CRISTINA</option>
+              <option value="joao Ricardo">JOAO RICARDO</option>
+              <option value="jocian Cipriano">JOCIAN CIPRIANO</option>
+              <option value="joelma Silva">JOELMA SILVA</option>
+              <option value="joomara Trindade">JOOMARA TRINDADE</option>
+              <option value="joseAndre">JOSE ANDRE</option>
+              <option value="juliana Hernandes">JULIANA HERNANDES</option>
+              <option value="juliana Oliveira">JULIANA OLIVEIRA</option>
+              <option value="Katherine Silva">KATHERINE SILVA</option>
+              <option value="Lara Leal">LARA LEAL</option>
+              <option value="Leandro Do Nascimento">LEANDRO DO NASCIMENTO</option>
+              <option value="Leticia Maia">LETICIA MAIA</option>
+              <option value="Lucas Quintanilha">LUCAS QUINTANILHA</option>
+              <option value="Ludmily Azaredo">LUDMILY AZEREDO</option>
+              <option value="Luiz Soares">LUIZ SOARES</option>
+              <option value="Maira De Moraes">MAIRA DE MORAES</option>
+              <option value="Marcelle Luzia">MARCELLE LUZIA</option>
+              <option value="Margarete Soares">MARGARETE SOARES</option>
+              <option value="Maria Cecilia">MARIA CECILIA</option>
+              <option value="Maria De Fatima">MARIA DE FATIMA</option>
+              <option value="Maria Leila">MARIA LEILA</option>
+              <option value="Maria Tereza">MARIA TEREZA</option>
+              <option value="Mateus David">MATEUS DAVID</option>
+              <option value="Marucio Gonçalves">MAURICIO GONÇALVES</option>
+              <option value="Mayderson Emanuel">MAYDERSON EMANUEL</option>
+              <option value="Natalia Dos Santos">NATALIA DOS SANTOS</option>
+              <option value="Patricia Vale">PATRICIA VALE</option>
+              <option value="Paula Eduarda">PAULA EDUARDA</option>
+              <option value="Phellpe Rodrigues">PHELLIPE RODRIGUES</option>
+              <option value="Priscila Da Silva">PRISCILA DA SILVA</option>
+              <option value="Rafael Do Prado">RAFAEL DO PRADO</option>
+              <option value="Ranata Dos Santos">RENATA DOS SANTOS</option>
+              <option value="Roberta Da Silva">ROBERTA DA SILVA</option>
+              <option value="Rosiele Da Solidade">ROSIELE DA SOLIDADE</option>
+              <option value="Sheila Maiane">SHEILA MAIANE</option>
+              <option value="Silvia Maria">SILVIA MARIA</option>
+              <option value="Simmone_alves">SIMONE ALVES</option>
+              <option value="Suellem Da Silva">SUELLEM DA SILVA</option>
+              <option value="Suzane Da Silveira">SUZANE DA SILVEIRA</option>
+              <option value="Tais Angelica">TAIS ANGELICA</option>
+              <option value="Talita Felix">TALITA FELIX</option>
+              <option value="Talita Rissati">TALITA RISSATI</option>
+              <option value="Tatiana Rafaela">TATIANA RAFAELA</option>
+              <option value="Tatiane Priscila">TATIANE PRISCILA</option>
+              <option value="Taynara Juliana">TAYNARA JULIANA</option>
+              <option value="Thiago Faissal">THIAGO FAISSAL</option>
+              <option value="Valdilene Ramos">VALDILENE RAMOS</option>
+              <option value="Valeria Carvalho">VALERIA CARVALHO</option>
+              <option value="Vanessa De Souza">VANESSA DE SOUZA</option>
+              <option value="Vania Morata">VANIA MORATA</option>
+              <option value="Victor Hugo">VICTOR HUGO</option>
+              <option value="Vinicius Domingos">VINICIUS DOMINGOS</option>
+              <option value="Vittor Eduardo">VITOR EDUARDO</option>
+              <option value="Vitor Vieira">VITOR VIEIRA</option>
+              <option value="Viviane Alves">VIVIANE ALVES</option>
+              <option value="Waldirene Ferreira">WALDIRENE FERREIRA</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Termo de consentimento para comunicações -->
+        <div class="termo">
+          <label>
+            <input type="radio" name="consent" required>
+            Aceito receber comunicações personalizadas e conteúdo de L’Oréal Beleza Dermatológica através do e-mail e
+            telefone celular, que pode conter informações sobre as marcas:
+            La Roche-Posay, Vichy, CeraVe, SkinCeuticals, DermaClub, SkinAlliance, Club Expert e fazer parte do L’Oréal
+            Dermatological Beauty PRO. O Club Expert é um clube de relacionamento exclusivo para farmacêuticos. Você
+            pode cancelar a inscrição a qualquer momento, por meio do link encontrado em cada comunicação que
+            enviamos.​*.
+          </label>
+        </div>
+
+        <!-- Botão de Enviar -->
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./src/script/loreal_fotoprotecao_saude.js"></script>
+</body>
+
+</html>
